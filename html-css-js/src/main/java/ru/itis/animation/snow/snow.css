@@ -1,0 +1,73 @@
+.snowflake {
+    background-image: url('assets/snow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-top: -60px;
+    animation:snow2 10s linear;
+    animation-iteration-count: 1;
+}
+
+.snowflake2 {
+    background-image: url('assets/snow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-top: -60px;
+    animation:snow1 10s linear;
+    animation-iteration-count: 1;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(38, 24, 65);
+}
+
+@keyframes snow1 {
+
+    30%{
+        margin-left: 50px;
+    }
+
+    50%{
+        margin-left: 0px;
+    }
+
+    75%{
+        margin-left: 50px;
+    }
+
+    100%{
+        margin-left: 0px;
+        margin-top: 100%;
+    }
+
+}
+
+
+@keyframes snow2 {
+
+    10%{
+        margin-left: 50px;
+    }
+
+    20%{
+        margin-left: 0;
+    }
+
+    50%{
+        margin-left: 50px;
+    }
+
+    75%{
+        margin-left: 0;
+    }
+
+    100%{
+        margin-left: 20px;
+        margin-top: 100%;
+    }
+
+}
